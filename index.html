@@ -4,6 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DiceGame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="wrapcontainer">
+        <form id="form">
+          <div class="formwrapper">
+            <div class="formwrapper1">
+              <label for="noofplayer">No of players</label>
+              <span class="input1">
+                <input type="text" id="noofplayer" class="labeled" />
+                <p>min:1 player | max:5 players</p>
+              </span>
+            </div>
+            <div class="formwrapper1">
+              <label for="noofdice">No of dice per player</label>
+              <span class="input1">
+                <input type="text" id="noofdice" class="labeled" />
+                <p>min:1 dice | max:6 dices</p>
+              </span>
+            </div>
+          </div>
+        </form>
+        <button class="btn">Start</button>
+      </div>
+    </div>
+  </body>
 </html>
