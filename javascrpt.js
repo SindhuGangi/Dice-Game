@@ -19,11 +19,11 @@ function checkinput() {
     warning.textContent = "❌ Both inputs must be  Players-2:5 and  Dices-1:6 .";
     warning.style.visibility = "visible";
   }
-  else if (Number(text) > 5 || Number(text) < 2) {
+  else if (text > 5 || text < 2) {
     warning.textContent = "❌ Players-2:5.";
     warning.style.visibility = "visible";
 
-  } else if (Number(text1) > 6 || Number(text1) < 1) {
+  } else if (text1 > 6 || text1 < 1) {
     warning.textContent = "❌ Dices-1:6.";
     warning.style.visibility = "visible";
   }
