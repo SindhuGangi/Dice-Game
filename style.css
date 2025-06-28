@@ -1,18 +1,10 @@
 body {
-<<<<<<< HEAD
   background-color: #111b19;
-=======
-  background-color: #000000;
->>>>>>> dec177bc9ccfc3e915b733c29cf85045e181448f
   margin: 0;
   padding: 0;
 }
 .container {
-<<<<<<< HEAD
   background-color: #6f747340;
-=======
-  background-color: #111b1907;
->>>>>>> dec177bc9ccfc3e915b733c29cf85045e181448f
   display: flex;
   padding: 10px;
   justify-content: space-between;

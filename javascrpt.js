@@ -1,4 +1,5 @@
-var createcontent = document.querySelector(".container.playgame").style.visibility = "hidden";
+var createcontent = document.querySelector(".container.playgame");
+createcontent.style.visibility = "hidden";
 var warning = document.querySelector("p.caption1.caption2");
 warning.style.visibility = "hidden";
 iswarning = false;
@@ -25,10 +26,7 @@ function checkinput() {
   } else if (Number(text1) > 6 || Number(text1) < 1) {
     warning.textContent = "❌ Dices-1:6.";
     warning.style.visibility = "visible";
-<<<<<<< HEAD
 
-=======
->>>>>>> dec177bc9ccfc3e915b733c29cf85045e181448f
   }
 
 }
