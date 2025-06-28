@@ -14,32 +14,58 @@
       href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="wrapcontainer">
-        <form id="form">
-          <div class="formwrapper">
-            <div class="formwrapper1">
-              <label for="noofplayer">No of players</label>
-              <span class="input1">
-                <input type="text" id="noofplayer" class="labeled" />
-                <p>min:1 player | max:5 players</p>
-              </span>
+    <header>
+      <div class="container">
+        <div class="wrapcontainer">
+          <form id="form">
+            <div class="formwrapper">
+              <div class="formwrapper1">
+                <label for="noofplayer">No of players</label>
+                <span class="input1">
+                  <input type="text" id="noofplayer" class="labeled" />
+                  <p>min:2 player | max:5 players</p>
+                </span>
+              </div>
+              <div class="formwrapper1">
+                <label for="noofdice">No of dice per player</label>
+                <span class="input1">
+                  <input type="text" id="noofdice" class="labeled" />
+                  <p>min:1 dice | max:6 dices</p>
+                </span>
+              </div>
             </div>
-            <div class="formwrapper1">
-              <label for="noofdice">No of dice per player</label>
-              <span class="input1">
-                <input type="text" id="noofdice" class="labeled" />
-                <p>min:1 dice | max:6 dices</p>
-              </span>
-            </div>
-          </div>
-        </form>
-        <button class="btn">Start</button>
+          </form>
+          <button class="btn" onclick="checkinput();">Let’s Go!</button>
+        </div>
       </div>
-    </div>
+      <div class="container playgame">
+        <div class ="wrapcontainer">
+          <div class="container2">
+            <button class="btn">Roll Dice!  </button>
+        </div>
+        <div class="caption">
+          <p class="caption1">Roll Hard, Play Smart, Win Big!</p>
+        </div>
+        <div class="btn  ">
+          <button class="btn btn2">Start Again  </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container3">
+        <div class="warning">
+          <p class="caption1 caption2">Check the input might be empty</p></div>
+      </div>
+    </main>
+    <footer>
+      <div
+
+    </footer>
+    <script src="./javascrpt.js"></script>
   </body>
 </html>

@@ -1,76 +1,107 @@
-body{
- background-color: #2F5249;
- margin:0;
- padding:0;
-  
+body {
+  background-color: #111b19;
+  margin: 0;
+  padding: 0;
 }
-.container{
-     background-color: #437057;
-     display: flex;
-     padding:10px;
-     justify-content:  space-between;
-     align-items: center;
-}
-.wrapcontainer{
+.container {
+  background-color: #6f747340;
   display: flex;
-  flex-basis:1500px;
-  max-width:85vw;
-  margin-left: 50px;
-  padding:1rem;
-  justify-content: space-between  ;
+  padding: 10px;
+  justify-content: space-between;
   align-items: center;
-
+  position: relative;
 }
-.formwrapper{
-   display: flex;
-   justify-content:flex-start;
-   width:65vw;
-  
-} 
-.formwrapper1{
-    width:550px;
+.wrapcontainer {
+  display: flex;
+  flex-basis: 1500px;
+  max-width: 85vw;
+  margin-left: 50px;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
 }
-label{
-  display:block;
-   font-family: "IBM Plex Mono", monospace;
+.formwrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: 65vw;
+}
+.formwrapper1 {
+  width: 550px;
+}
+label {
+  display: block;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   font-style: italic;
-  color:#E3DE61;
+  color: #e3de61;
   font-size: 28px;
   letter-spacing: 1px;
 }
-.input1{
+.input1 {
   display: flex;
   margin: 5px 0px 5px 0px;
-  
 }
 input.labeled {
-  box-sizing:border-box;
-   margin-right: 20px;
-   border-radius: 2rem;;
-    width: 100px;
-    height: 50px;
-    outline:none;
-    border:1px solid #437057;
-    font-size: 30px;
-   text-align: center;
+  box-sizing: border-box;
+  margin-right: 20px;
+  border-radius: 2rem;
+  width: 100px;
+  height: 50px;
+  outline: none;
+  border: 1px solid #437057;
+  font-size: 30px;
+  text-align: center;
 }
 input.labeled:hover {
-  border :4px solid #FFB823;;
+  border: 4px solid #ffb823;
 }
-p{
-   font-family: "Libertinus Mono", monospace;   
-  color:#ffb923;
+p {
+  font-family: "Libertinus Mono", monospace;
+  color: #ffb923;
 }
-.btn{
-  width:150px;
-  height:50px;
+.btn {
+  width: 150px;
+  height: 50px;
   border-radius: 2rem;
   border: none;
-  background-color: #97B067;
-  font-family: "Libertinus Mono", monospace; 
-  font-size:large;
-  color:white;
-  font-weight:bold;
+  background-color: #ffb823;
+  font-family: "Libertinus Mono", monospace;
+  font-size: large;
+  color: white;
+  font-weight: bold;
 }
- 
+.container2 {
+  width: 150px;
+}
+.caption {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+}
+.btn2 {
+  width: 200px;
+  background-color: rgb(5, 120, 120) !important;
+}
+p.caption1 {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+.playgame {
+  position: absolute;
+}
+.container3 {
+  height: 65vh;
+  margin: 0;
+  padding: 0;
+}
+.warning {
+  text-align: center;
+}
+.caption2 {
+  background-color: #cb0404;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
