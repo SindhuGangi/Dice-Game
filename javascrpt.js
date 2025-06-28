@@ -26,11 +26,6 @@ function checkinput() {
   } else if (Number(text1) > 6 || Number(text1) < 1) {
     warning.textContent = "❌ Dices-1:6.";
     warning.style.visibility = "visible";
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> 66723f5fb36e1914630c9022e0c2befd6706f40e
   }
 
 }
