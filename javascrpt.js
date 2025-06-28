@@ -11,7 +11,7 @@ function checkinput() {
     warning.style.visibility = "visible";
   }
 
-  if (!Number.isInteger(Number(text)) || !Number.isInteger(Number(text1))) {
+  else if (!Number.isInteger(Number(text)) || !Number.isInteger(Number(text1))) {
     warning.textContent = "❌ Both inputs must be whole numbers.";
     warning.style.visibility = "visible";
   }
