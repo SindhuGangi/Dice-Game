@@ -172,11 +172,6 @@ p.link {
   justify-content: center;
   gap: 200px;
 }
-svg {
-  width: "100px";
-  height: "100px";
-  fill: "#093FB4";
-}
 .container3.container4 {
   height: 63vh;
   width: 100%;
