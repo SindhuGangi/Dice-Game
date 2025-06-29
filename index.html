@@ -15,8 +15,8 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./style.css" />
+     <link rel="stylesheet" href="./style.css" />
+     
   </head>
   <body>
     <header>
@@ -24,24 +24,25 @@
         <div class="wrapcontainer">
           <form id="form">
             <div class="formwrapper">
-              <div class="formwrapper1">
-                <label for="noofplayer">No of players</label>
-                <span class="input1">
+              <div class="formwrapper1 toBottom">
+                <label for="noofplayer ">No of players</label>
+                <div class="input1">
                   <input type="text" id="noofplayer" class="labeled" min="2" max="5" />
-                  <p>min:2 player | max:5 players</p>
-                </span>
+                  <p class="instruction">min:2 player | max:5 players</p>
+                </div>
               </div>
               <div class="formwrapper1">
                 <label for="noofdice">No of dice per player</label>
-                <span class="input1">
+                <div class="input1">
                   <input type="text" id="noofdice" class="labeled" min="1" max="6"/>
-                  <p>min:1 dice | max:6 dices</p>
-                </span>
+                  <p class="instruction">min:1 dice | max:6 dices</p>
+                </div>
               </div>
             </div>
           </form>
+          </div>
           <button class="btn" onclick="checkinput();">Let’s Go!</button>
-        </div>
+         
       </div>
       <div class="container playgame">
         <div class ="wrapcontainer">
@@ -63,7 +64,21 @@
       </div>
     </main>
     <footer>
-      <div
+      <div class="fillfooter"> 
+      <div class="author">
+       <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="#e3de61" class="bi bi-dice-6" viewBox="0 0 16 16">
+         <path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3z"/>
+         <path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-8 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+       </svg> 
+      </div>
+      <div class="para"><p class="link">www.DiceGame.com</p></div>
+      <div class="author">
+       <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" fill="#e3de61" class="bi bi-dice-6" viewBox="0 0 16 16">
+         <path d="M13 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3z"/>
+         <path d="M5.5 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m8 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-8 4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-4a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+       </svg> 
+      </div>
+      </div>
     </footer>
      
     <script src="./javascrpt.js"></script>
