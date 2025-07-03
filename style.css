@@ -224,10 +224,12 @@ p.link {
     font-size: 15px;
   }
   .container {
-    height: 200px;
+    height: 100%;
     flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
     align-items: center;
-    min-width: 520px;
+    min-width: 100%;
     flex-shrink: 0;
   }
   .wrapcontainer {
@@ -254,8 +256,20 @@ p.link {
   }
   footer {
     flex: 0.25;
+    flex-shrink: 0;
+    width: 100%;
+  }
+  p.link {
+    font-size: 12px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+  .author svg {
+    width: 12px;
+    height: 12px;
   }
 }
+
 @keyframes roll {
   0% {
     transform: rotate(0deg);
