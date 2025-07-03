@@ -10,42 +10,34 @@ body {
   display: flex;
   flex-direction: column;
 }
-main {
+header {
   flex: 1;
+  background-color: #565b5a40;
+  width: 100%;
+}
+main {
+  flex: 3;
 }
 
 .container {
-  background-color: #565b5a40;
   display: flex;
-  height: 20vh;
   width: 100%;
-  justify-content: space-around;
+  height: 100%;
+  justify-content: center;
   align-items: center;
   position: relative;
-  gap: 20px;
+  justify-content: space-around;
 }
-.wrapcontainer {
-  display: flex;
-  width: 50%;
-  padding: 0;
-  margin-left: 50px;
-  padding: 1rem;
-  justify-content: space-between;
-  align-items: center;
-}
-.wrapcontainer2 {
-  width: 80%;
-  gap: 20px;
-}
+
 .formwrapper {
   display: flex;
   justify-content: flex-start;
-  width: 65vw;
-  gap: 50px;
+  width: 100%;
+  margin-right: 200px;
 }
 .formwrapper1 {
   flex-direction: column;
-  width: 600px;
+  width: 100%;
   display: flex;
   flex: 1;
   gap: 20px;
@@ -56,7 +48,7 @@ main {
   font-weight: bold;
   font-style: italic;
   color: #e3de61;
-  font-size: 28px;
+  font-size: 30px;
   letter-spacing: 1px;
 }
 .input1 {
@@ -66,61 +58,74 @@ input.labeled {
   box-sizing: border-box;
   margin-right: 20px;
   border-radius: 2rem;
-  width: 100px;
-  height: 50px;
+  width: 90px;
+  height: 45px;
   outline: none;
-  border: 1pxsolid#437057;
+  border: 1px solid #437057;
   font-size: 30px;
   text-align: center;
 }
 input.labeled:hover {
-  border: 4pxsolid#ffb823;
+  border: 4px solid #ffb823;
 }
 
 .instruction {
   font-family: "LibertinusMono", monospace;
   color: #ffb923;
   float: right;
+  font-size: 17px;
 }
+
 .btn {
-  flex: 0.35;
-  height: 50px;
+  width: 150px;
+  height: 70px;
   border-radius: 2rem;
   border: none;
   background-color: #ffb823;
   font-family: "LibertinusMono", monospace;
-  font-size: large;
+  font-size: 20px;
   color: white;
   font-weight: bold;
 }
-.container2 {
-  width: 150px;
-}
 .btn0 {
-  width: 150px;
+  background-color: rgb(5, 120, 120);
 }
+
 .caption {
-  display: flex;
-  justify-content: center;
-  width: 900px;
+  flex: 2;
+  /* justify-content: center;
+  width: 900px; */
 }
-.btn2 {
-  width: 200px;
-  background-color: rgb(5, 120, 120) !important;
-}
+
 p.caption1 {
   font-family: "AlfaSlabOne", serif;
   font-weight: 400;
   letter-spacing: 5px;
   font-size: 28px;
   color: #91c8e4;
+  width: 100%;
+  text-align: center;
 }
 .playgame {
-  position: absolute;
-  top: 0;
+  display: none;
+  justify-content: space-around;
+}
+.wrapcontainer2 {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  height: 100%;
+  justify-content: center;
+  column-gap: 50px;
+}
+.container2 {
+  flex: 1;
+}
+.button1 {
+  flex: 1;
 }
 .container3 {
-  height: 63vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #181a19a3;
@@ -141,7 +146,7 @@ p.caption1 {
   color: #fff;
 }
 footer {
-  flex: 1;
+  flex: 0.5;
   background-color: #000000;
   position: relative;
   bottom: 0;
@@ -172,32 +177,27 @@ p.link {
   justify-content: center;
   gap: 200px;
 }
-.container3.container4 {
-  height: 63vh;
+.container4 {
+  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
-  position: absolute !important;
-  top: 0px;
 }
 .players {
-  width: 650px;
-  position: relative;
-  left: 40%;
-  top: 100px;
+  width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
 }
-.player1,
+.player1 {
+  flex: 1;
+}
 .player2 {
-  width: 650px;
-  display: flex;
-
-  flex-direction: column;
-  justify-content: center;
+  flex: 1;
 }
+
 .players img {
   width: 100px;
   height: 100px;
@@ -206,13 +206,30 @@ p.link {
 @media (min-width: 200px) and (max-width: 950px) {
   .instruction {
     float: left;
+    font-size: small;
   }
-  .input1 {
-    display: block;
+  .wrapcontainer {
+    margin-left: 0;
   }
-}
-@media (min-width: 733px) and (max-width: 1137px) {
-  .formwrapper1.toBottom {
-    gap: 48px;
+  .formwrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+  .formwrapper1 {
+    font-size: 10px;
+  }
+  .paralabel {
+    font-size: 15px;
+  }
+  .container {
+    height: 200px;
+  }
+  .btn {
+    height: 30px;
+    width: 100px;
+    font-size: 10px;
+  }
+  .caption1 {
+    font-size: 12px !important;
   }
 }

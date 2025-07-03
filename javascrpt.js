@@ -1,14 +1,14 @@
-var createcontent = document.querySelector(".container.playgame");
+var createcontent = document.querySelector(".playgame");
 var startGame = document.querySelector(".container");
 var main1 = document.querySelector(".container3");
-var main2 = document.querySelector(".container3.container4");
-main2.style.display = "none";
-createcontent.style.visibility = "hidden";
+var main2 = document.querySelector(".container4");
 var warning = document.querySelector("p.caption1.caption2");
 var whowon = document.querySelector(".caption1");
+createcontent.style.display = "none";
 warning.style.visibility = "hidden";
+startGame.style.visibility = "visible";
 main1.style.visibility = "visible";
-main2.style.visibility = "hidden";
+main2.style.display = "none";
 iswarning = false;
 function checkinput() {
   var text = document.querySelector("input").value;
@@ -35,6 +35,11 @@ function checkinput() {
     warning.style.visibility = "visible";
   } else {
     startGame.style.visibility = "hidden";
+    startGame.style.display = "none";
+    startGame.style.height = "0";
+    createcontent.style.height = "100%";
+    createcontent.style.display = "flex";
+
     createcontent.style.visibility = "visible";
     warning.style.visibility = "hidden";
 
@@ -42,10 +47,17 @@ function checkinput() {
 
 }
 function imgChange() {
-  main1.style.visibility = "hidden";
+  startGame.style.display = "none";
+  startGame.style.height = "0";
+  createcontent.style.height = "100%";
+  createcontent.style.display = "flex";
+  createcontent.style.justifyContent = "space-around";
+
+  main1.style.display = "none";
+  main2.style.display = "flex";
   main2.style.visibility = "visible";
-  main2.style.display = "block";
-  main2.style.position = "relative";
+
+  main2.style.height = "100%";
 
   var randomNumber1 = Math.floor(Math.random() * 6) + 1;
   var randomNumber2 = Math.floor(Math.random() * 6) + 1;
