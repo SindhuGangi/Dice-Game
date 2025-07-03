@@ -65,9 +65,9 @@ function imgChange() {
   var num1 = document.querySelectorAll(".players img")[1];
 
   num.setAttribute("alt", randomNumber1.toString());
-  num.setAttribute("src", `./img/Dice-${randomNumber1}.png`);
+  num.setAttribute("src", `img/Dice-${randomNumber1}.png`);
   num1.setAttribute("alt", randomNumber2.toString());
-  num1.setAttribute("src", `./img/Dice-${randomNumber2}.png`);
+  num1.setAttribute("src", `img/Dice-${randomNumber2}.png`);
   console.log(Number(num.getAttribute('alt')));
   console.log(Number(num1.getAttribute('alt')));
   if (Number(num.getAttribute("alt")) > Number(num1.getAttribute("alt"))) {
