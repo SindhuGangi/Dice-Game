@@ -208,7 +208,7 @@ p.link {
 @media (min-width: 200px) and (max-width: 950px) {
   .instruction {
     float: left;
-    font-size: small;
+    font-size: 10px;
   }
   .wrapcontainer {
     margin-left: 0;
@@ -221,7 +221,7 @@ p.link {
     font-size: 10px;
   }
   .paralabel {
-    font-size: 15px;
+    font-size: 12px;
   }
   .container {
     height: 100%;
@@ -233,13 +233,18 @@ p.link {
     min-width: 100%;
     flex-shrink: 0;
   }
+  input.labeled {
+    width: 50px;
+    height: 30px;
+    font-size: 12px;
+  }
   .wrapcontainer {
     display: flex;
     justify-content: center;
   }
   .btn {
     height: 30px;
-    width: 100px;
+    width: 70px;
     font-size: 10px;
   }
   .caption1 {
