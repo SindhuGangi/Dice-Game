@@ -51,10 +51,11 @@ function checkinput() {
   }
 
 }
+var whowon = document.querySelector(".caption1");
 function imgChange() {
   var text = document.querySelector("input").value;
   var text1 = document.querySelectorAll("input")[1].value;
-  var whowon = document.querySelector(".caption1");
+
   var playerdiv = document.querySelector(".players");
   playerdiv.innerHTML = " ";
   var playerScores = [];
@@ -135,6 +136,8 @@ function start() {
   document.querySelector("#noofdice").value = "";
   text1 = " ";
   text = " ";
+  rolldice.textContent = "Roll Dice"
+  whowon.innerHTML = "Roll Hard, Play Smart, Win Big!";
 }
 
 
