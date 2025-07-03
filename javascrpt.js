@@ -4,6 +4,10 @@ var main1 = document.querySelector(".container3");
 var main2 = document.querySelector(".container4");
 var warning = document.querySelector("p.caption1.caption2");
 var whowon = document.querySelector(".caption1");
+var text = document.querySelector("input").value;
+var text1 = document.querySelectorAll("input")[1].value;
+var playerdiv = document.querySelector(".players");
+var rolldice = document.querySelectorAll("button.btn")[1];
 createcontent.style.display = "none";
 warning.style.visibility = "hidden";
 startGame.style.visibility = "visible";
@@ -13,6 +17,7 @@ iswarning = false;
 function checkinput() {
   var text = document.querySelector("input").value;
   var text1 = document.querySelectorAll("input")[1].value;
+
   if (((text.trim() === "") || (text1.trim() === ""))) {
     warning.textContent = "❌ Both fields are required.";
     warning.style.visibility = "visible";
@@ -47,6 +52,43 @@ function checkinput() {
 
 }
 function imgChange() {
+  var text = document.querySelector("input").value;
+  var text1 = document.querySelectorAll("input")[1].value;
+  var whowon = document.querySelector(".caption1");
+  var playerdiv = document.querySelector(".players");
+  playerdiv.innerHTML = " ";
+  var playerScores = [];
+
+  for (var i = 1; i <= Number(text); i++) {
+    var totalScore = 0;
+
+    var newplayers = document.createElement("div");
+    newplayers.classList.add(".player");
+    const label = document.createElement("p");
+    label.textContent = `Player ${i}`;
+    label.classList.add("paralabel");
+    newplayers.appendChild(label);
+    for (var j = 1; j <= Number(text1); j++) {
+      const dice = document.createElement("img");
+      var random = Math.floor(Math.random() * 6) + 1;
+      dice.src = `./img/Dice-${random}.png`;
+      dice.alt = random.toString();
+      dice.alt = "1";
+      dice.classList.add("dice");
+      dice.classList.add("rolling");
+      setTimeout(() => {
+        dice.classList.remove("rolling");
+        const random = Math.floor(Math.random() * 6) + 1;
+        dice.src = `./img/Dice-${random}.png`;
+        dice.alt = random.toString();
+      }, 500);
+      newplayers.appendChild(dice);
+      totalScore += random;
+    }
+    console.log(totalScore);
+    playerScores.push(totalScore);
+    playerdiv.appendChild(newplayers);
+  }
   startGame.style.display = "none";
   startGame.style.height = "0";
   createcontent.style.height = "100%";
@@ -64,24 +106,36 @@ function imgChange() {
   var num = document.querySelector(".players img");
   var num1 = document.querySelectorAll(".players img")[1];
 
-  num.setAttribute("alt", randomNumber1.toString());
-  num.setAttribute("src", `img/Dice-${randomNumber1}.png`);
-  num1.setAttribute("alt", randomNumber2.toString());
-  num1.setAttribute("src", `img/Dice-${randomNumber2}.png`);
-  console.log(Number(num.getAttribute('alt')));
-  console.log(Number(num1.getAttribute('alt')));
-  if (Number(num.getAttribute("alt")) > Number(num1.getAttribute("alt"))) {
-    whowon.innerHTML = "Player 1 Won!";
+  const maxScore = Math.max(...playerScores);
+  const winners = [];
 
-  } else if (Number(num.getAttribute("alt")) < Number(num1.getAttribute("alt"))) {
-    whowon.innerHTML = "Player 2 Won!";
-  } else if (Number(num.getAttribute("alt")) === Number(num1.getAttribute("alt"))) {
-    whowon.innerHTML = "It's A Draw!";
+  playerScores.forEach((score, index) => {
+    if (score === maxScore) {
+      winners.push(index + 1); // Player number is index + 1
+    }
+  });
+
+  if (winners.length === 1) {
+    whowon.innerHTML = `🏆 Player ${winners[0]} Won!`;
+  } else {
+    whowon.innerHTML = `🤝 It's a Draw between Players: ${winners.join(", ")}`;
   }
-
-
+  rolldice.textContent = "Roll Once Again!"
 }
-
+function start() {
+  createcontent.style.display = "none";
+  startGame.style.display = "flex";
+  startGame.style.visibility = "visible";
+  startGame.style.height = "100%";
+  main1.style.visibility = "visible";
+  main1.style.display = "flex";
+  main2.style.display = "none";
+  warning.style.visibility = "hidden";
+  document.querySelector("#noofplayer").value = "";
+  document.querySelector("#noofdice").value = "";
+  text1 = " ";
+  text = " ";
+}
 
 
 
