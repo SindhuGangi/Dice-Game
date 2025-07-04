@@ -4,21 +4,22 @@ body {
   background-color: #222222;
   margin: 0;
   padding: 0;
-  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 body {
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  min-height: 100vh;
 }
 header {
-  flex: 1;
   background-color: #565b5a40;
   width: 100%;
+  max-height: fit-content;
   flex-shrink: 0;
 }
 main {
-  flex: 3;
+  flex: 1;
   width: 100%;
   flex-shrink: 0;
 }
@@ -31,6 +32,7 @@ main {
   align-items: center;
   position: relative;
   justify-content: space-around;
+  gap: 50px;
 }
 
 .formwrapper {
@@ -149,7 +151,7 @@ p.caption1 {
   color: #fff;
 }
 footer {
-  flex: 0.5;
+  height: auto;
   background-color: #000000;
   position: relative;
   bottom: 0;
@@ -207,14 +209,14 @@ p.link {
 }
 
 @media (min-width: 200px) and (max-width: 950px) {
-body{
-  display:flex;
-  flex-direction: column;
-  justify-content: centre;
-  align-items: centre;
-  height:100%;
-  width:100%;
-}
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: centre;
+    align-items: centre;
+    height: 100%;
+    width: 100%;
+  }
   .instruction {
     float: left;
     font-size: 10px;
@@ -250,11 +252,13 @@ body{
   .wrapcontainer {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
   }
   .btn {
     height: 30px;
     width: 70px;
     font-size: 10px;
+    margin-bottom: 40px;
   }
   .caption1 {
     font-size: 12px !important;
@@ -283,7 +287,7 @@ body{
     width: 12px;
     height: 12px;
   }
-
+}
 
 @keyframes roll {
   0% {
