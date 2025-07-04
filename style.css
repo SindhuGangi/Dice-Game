@@ -15,7 +15,6 @@ body {
 header {
   background-color: #565b5a40;
   width: 100%;
-  max-height: fit-content;
   flex-shrink: 0;
 }
 main {
@@ -32,7 +31,6 @@ main {
   align-items: center;
   position: relative;
   justify-content: space-around;
-  gap: 50px;
 }
 
 .formwrapper {
@@ -151,7 +149,7 @@ p.caption1 {
   color: #fff;
 }
 footer {
-  height: auto;
+  flex: 0.5;
   background-color: #000000;
   position: relative;
   bottom: 0;
@@ -252,13 +250,11 @@ p.link {
   .wrapcontainer {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
   }
   .btn {
     height: 30px;
     width: 70px;
     font-size: 10px;
-    margin-bottom: 40px;
   }
   .caption1 {
     font-size: 12px !important;
