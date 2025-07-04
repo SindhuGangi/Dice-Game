@@ -274,7 +274,12 @@ p.link {
     width: 12px;
     height: 12px;
   }
-}
+  header{
+    width:100%;
+  }
+  main{
+    width:100%;
+  }
 
 @keyframes roll {
   0% {
