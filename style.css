@@ -142,6 +142,9 @@ p.caption1 {
     gap: 1.5rem;
     flex-wrap: wrap;
   }
+  .container.playgame {
+    gap: 0px;
+  }
 
   .wrapcontainer {
     flex-direction: column;
@@ -181,7 +184,7 @@ p.caption1 {
     margin-top: 1rem;
     align-self: center;
   }
-  .playgame .button {
+  .container.playgame .button {
     min-height: 0px;
     margin-top: 0px;
   }
