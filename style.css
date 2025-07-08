@@ -152,6 +152,7 @@ p.caption1 {
   }
   .wrapcontainer {
     margin: auto;
+    width:100%;
     height: 50%;
     column-gap: 20px;
     flex-direction: row;
