@@ -148,6 +148,7 @@ p.caption1 {
     padding: 1rem;
     min-width: unset;
     gap: 1.5rem;
+    flex-wrap: wrap;
   }
 
   .wrapcontainer {
