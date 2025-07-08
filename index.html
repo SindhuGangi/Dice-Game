@@ -14,49 +14,65 @@
       href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="./style.css" />
-     
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
       <div class="container">
-        <div class="wrapcontainer">
-          <form id="form">
-            <div class="formwrapper">
-              <div class="formwrapper1 toBottom">
-                <label for="noofplayer " class="paralabel">No of players</label>
+        <div class="wrapcontainer"> 
+              <div class="form">
+                <label for="noofplayer " class="form-label"
+                  >No of players</label
+                >
                 <div class="input1">
-                  <input type="text" id="noofplayer" class="labeled" min="2" max="5" />
+                  <input
+                    type="text"
+                    id="noofplayer"
+                    class="labeled"
+                    min="2"
+                    max="5"
+                  />
                   <p class="instruction">min:2 player | max:5 players</p>
                 </div>
               </div>
-              <div class="formwrapper1 ">
-                <label for="noofdice" class="paralabel" >No of dice per player</label>
+              <div class="formwrapper1">
+                <label for="noofdice" class="form-label"
+                  >No of dice per player</label
+                >
                 <div class="input1">
-                  <input type="text" id="noofdice" class="labeled" min="1" max="6"/>
+                  <input
+                    type="text"
+                    id="noofdice"
+                    class="labeled"
+                    min="1"
+                    max="6"
+                  />
                   <p class="instruction">min:1 dice | max:6 dices</p>
                 </div>
               </div>
-            </div>
-          </form>
-        </div>
-          <button class="btn" onclick="checkinput();  ">Let’s Go!</button>
+              </div>
+              <div class="button">
+               <button class="btn" onclick="checkinput();  ">Let’s Go!</button>
+              </div>
       </div>
       <div class="container playgame">
-        <div class ="wrapcontainer wrapcontainer2">
-          <div class="container2">
-            <button class="btn " onclick="imgChange();">Roll Dice!  </button>
+          <div class="button">
+            <button class="btn btn1 " onclick="imgChange();">Roll Dice!  </button>
+          </div>
+          <div class="caption">
+           <p class="caption1">Roll Hard, Play Smart, Win Big!</p>
+          </div>
+          <div class="button">
+           <button class="btn btn0" onclick="start();">Start Again  </button>
+          </div>
         </div>
-        <div class="caption">
-          <p class="caption1">Roll Hard, Play Smart, Win Big!</p>
-        </div>
-        <div class="button1">
-          <button class="btn btn0" onclick="start();">Start Again  </button>
-        </div>
-      </div>
+     </div> 
     </header>
-    <main>
+      <main>
       <div class="container3">
         <div class="content"> 
         <div class="warning">
@@ -97,8 +113,6 @@
       </div>
     </footer>
      
-    <script src="./javascrpt.js"></script>
-
-   
-  </body>
+    <script src="./javascrpt.js"></script> 
+  </body> 
 </html>
