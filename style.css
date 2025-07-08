@@ -23,7 +23,7 @@ header {
 .container {
   padding: 10px 20px;
   width: 80%;
-  min-width: 450px;
+  flex-wrap: wrap;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -79,19 +79,8 @@ input.labeled:hover {
   font-size: clamp(0.3rem, 1.5vw + 1rem, 1rem);
 }
 .button {
-  height: 20%;
-
-  max-width: 20%;
   min-width: 55px;
   border-radius: 2rem;
-  background: linear-gradient(
-    135deg,
-    rgb(255, 106, 0),
-    #ffb823,
-    #fdc54d,
-    #e3de61,
-    rgb(255, 106, 0)
-  );
   min-height: 50px;
 }
 .btn {
@@ -185,8 +174,7 @@ p.caption1 {
   }
 
   .button {
-    width: 70%;
-    max-width: 200px;
+    margin-top: 10px;
     margin-top: 1rem;
     align-self: center;
   }
